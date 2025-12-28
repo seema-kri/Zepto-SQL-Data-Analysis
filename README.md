@@ -120,7 +120,7 @@ I am actively building projects in **SQL, Excel, Power BI, and Python** to stren
 
 [![Email](https://img.shields.io/badge/Email-red?logo=gmail&logoColor=white)](mailto:kriseema87@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/seema-kumari-375763308/)
-[![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)]()
+[![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/seema-kri)
 
 
 ⭐ *Thank you for exploring this project!*  
