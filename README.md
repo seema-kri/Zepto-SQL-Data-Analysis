@@ -1,124 +1,131 @@
-📦 Zepto Data Analysis: My First SQL Project 🎉
+# 📦 Zepto Data Analysis – SQL Business Insights Project
 
+## 📌 Project Overview
+This project is my **first end-to-end SQL data analysis project**, built using a realistic dataset inspired by **Zepto**, a quick-commerce grocery delivery platform.
 
+The purpose of this project is to use **SQL** to extract meaningful **business insights** related to **pricing strategy, discounts, inventory distribution, and product performance**.  
+It demonstrates my ability to think like a data analyst and translate raw product data into actionable insights.
 
-📋 Table of Contents
+---
 
-📖 About the Project
+## 🎯 Project Objective
+- Analyze product-level data using SQL
+- Understand pricing and discount strategies
+- Identify inventory and stock patterns
+- Generate insights useful for **business, operations, and supply chain teams**
 
-⚙️ Steps I Followed
+---
 
-📊 Key Insights
+## 🗂 Dataset Description
+The dataset contains product-level details commonly found in quick-commerce platforms.
 
-💡 What I Learned
+### Columns Included
+- `sku_id`
+- `category`
+- `name`
+- `mrp`
+- `quantity`
+- `discountPercent`
+- `availableQuantity`
+- `discountedSellingPrice`
+- `weightInGms`
+- `outOfStock`
 
-📁 Files in This Repo
+---
 
-👩‍💻 About Me
+## ⚙️ Data Analysis Workflow
 
-📖 About the Project
+### 1️⃣ Data Setup
+- Created a SQL table to store product data
+- Defined appropriate data types for prices, quantities, and weights
 
-Hi there! 👋
-Welcome to my first end-to-end SQL Data Analysis Project using a realistic dataset inspired by Zepto, a quick grocery delivery platform.
+### 2️⃣ Data Exploration
+- Checked table structure and data distribution
+- Counted products by category
+- Identified missing, duplicate, and invalid values
 
-Objective:
-To extract actionable business insights from product data using SQL, helping understand product trends, pricing strategies, and inventory patterns.
+### 3️⃣ Data Cleaning
+- Removed products with `MRP = 0`
+- Converted prices from **paise to rupees**
+- Handled NULL values and removed duplicates
 
-Dataset Columns:
-sku_id, category, name, mrp, quantity,
-discountPercent, availableQuantity, discountedSellingPrice,
-weightInGms, outOfStock
+### 4️⃣ SQL Analysis
+Performed analysis using SQL queries to answer business questions such as:
+- Top 10 products offering the **highest discounts**
+- High-MRP products that are **out of stock**
+- **Estimated revenue** by category
+- Categories with the **highest average discounts**
+- **Price per gram** comparison across products
+- Product grouping by **weight categories** (Low / Medium / Bulk)
+- Total **inventory weight by category**
 
-[📁 View Zepto_Business_Insights.pdf](https://github.com/Seema1200/Zepto-SQL-Data-Analysis/blob/main/Zepto_Business_Insights.pdf)
+📄 **Main SQL File:**  
+➡️ [View zepto_analysis.sql](./zepto_analysis.sql)
 
-[📄 View zepto_analysis.sql](https://github.com/Seema1200/Zepto-SQL-Data-Analysis/blob/main/zepto_analysis.sql)
+---
 
-⚙️ Steps I Followed
-🗄️ 1. Data Setup
+## 📊 Key Business Insights
 
-Created a SQL table to store product information (name, price, category, weight, etc.)
+### 🛒 Discount Strategy
+- Fruits & Vegetables and Meats, Fish & Eggs receive higher discounts due to perishability
+- Premium and essential items maintain lower discounts to protect margins
 
-🔍 2. Data Exploration
+### 💰 Revenue Trends
+- Cooking Essentials, Munchies, and Personal Care generate the **highest estimated revenue**
+- Fresh produce contributes lower revenue but drives customer engagement
 
-Understood structure, checked missing or duplicate values
+### ⚖️ Inventory Distribution
+- Cooking Essentials and Munchies dominate total inventory weight
+- Meats, Fish & Eggs are lighter, aiding faster delivery and storage efficiency
 
-Counted products by category
+### ⚡ Best Value Products
+- Staples like **salt and onions** have the lowest price per gram
+- These items provide strong value for customers
 
-🧹 3. Data Cleaning
+### 📦 Weight-Based Patterns
+- Majority of products fall under **light-weight (<1000g)** category
+- Supports Zepto’s quick-delivery operational model
 
-Removed products with MRP = 0
+---
 
-Converted prices from paise to rupees
+## 📁 Project Files
+| File | Description |
+|-----|------------|
+| [`zepto_analysis.sql`](./zepto_analysis.sql) | Main SQL script with all analysis queries |
+| [`Zepto_Business_Insights.pdf`](./Zepto_Business_Insights.pdf) | Visual presentation of insights |
 
-Removed duplicates and handled NULL values
+---
 
-📈 4. Analysis using SQL Queries
+## 💡 Key Learnings
+- Writing practical SQL queries using:
+  - `SELECT`, `WHERE`, `GROUP BY`, `ORDER BY`, `CASE`
+- Cleaning and preparing real-world-style datasets
+- Using `SUM`, `AVG`, `COUNT` for business analysis
+- Thinking analytically and asking **impactful business questions**
+- Presenting insights clearly and logically
 
-Top 10 best-value products (highest discounts)
+---
 
-High MRP but out-of-stock products
+## 🚀 Future Improvements
+- Add customer-level analysis
+- Include profit and margin calculations
+- Automate insights using views or stored procedures
+- Visualize insights using Power BI
 
-Revenue estimation by category
-
-Categories with highest average discount
-
-Price per gram comparison
-
-Grouped products by weight (Low/Medium/Bulk)
-
-Calculated total inventory weight by category
-
-📁 **Main SQL Script:**  
-[📄 View zepto_analysis.sql](https://github.com/Seema1200/Zepto-SQL-Data-Analysis/blob/main/zepto_analysis.sql)
-
-📊 Key Insights
-
-🛒 Discount Strategy:
-Fruits & Vegetables and Meats, Fish & Eggs get higher discounts due to perishability, while premium essentials keep lower discounts to protect margins.
-
-💰 Revenue Trends:
-Cooking Essentials, Munchies, and Personal Care generate the highest estimated revenue; fresh items contribute the least.
-
-⚖️ Inventory Weight:
-Cooking Essentials and Munchies dominate stock weight, while Meats, Fish & Eggs are lightest — useful for planning storage and logistics.
-
-⚡ Best Value:
-Staple items like salt and onions have the lowest price per gram, making them highly cost-effective for customers.
-
-📦 Weight Categories:
-Most products are light (<1000g), making them easier and faster to deliver.
-
-💡 What I Learned
-
-Writing SQL queries (SELECT, WHERE, GROUP BY, ORDER BY, CASE, JOIN)
-
-Cleaning and preparing real-world-like datasets
-
-Performing basic data analysis using SUM, AVG, COUNT
-
-Thinking like an analyst — asking impactful business questions and presenting answers visually
-
-| File                                                           | Description                         |
-| -------------------------------------------------------------- | ----------------------------------- |
-| [`zepto_analysis.sql`](./zepto_analysis.sql)                   | Main SQL script with all queries    |
-| [`Zepto_Business_Insights.pdf`](https://github.com/Seema1200/Zepto-SQL-Data-Analysis/blob/main/Zepto_Business_Insights.pdf) | Visual presentation of all insights |
-
+---
 
 ## 👩‍💻 About Me
+Hi, I’m **Seema Kumari**, an aspiring **Data Analyst** passionate about turning raw data into meaningful business insights.  
+I am actively building projects in **SQL, Excel, Power BI, and Python** to strengthen my analytics skills and prepare for real-world roles.
 
-Hi, I’m **Seema Kumari** — an aspiring **Data Analyst** who loves solving puzzles and discovering stories hidden in data.  
-I’m looking for opportunities to **learn, grow, and contribute** as a junior data analyst.
-
-## 👩‍💻 About Me
-
-Hi, I’m **Seema Kumari** — an aspiring **Data Analyst** who loves solving puzzles and discovering stories hidden in data.  
-I’m looking for opportunities to **learn, grow, and contribute** as a junior data analyst.
-
-[![Email](https://img.shields.io/badge/Email-seemakri136%40gmail.com-red?logo=gmail&logoColor=white)](mailto:seemakri136@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Seema%20Kumari-blue?logo=linkedin)](https://www.linkedin.com/in/seema-kumari-375763308/)
-[![GitHub](https://img.shields.io/badge/GitHub-Seema1200-black?logo=github)](https://github.com/Seema1200)
+[![Email](https://img.shields.io/badge/Email-red?logo=gmail&logoColor=white)](mailto:kriseema87@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/seema-kumari-375763308/)
+[![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)]()
 
 
+⭐ *Thank you for exploring this project!*  
+This project represents my learning journey in SQL and my readiness to grow as a data analyst.
+---
 
-✨ Thank you for checking out my project!
-I hope it shows my excitement for learning and my potential to contribute as a data analyst.
+⭐ *Thank you for exploring this project!*  
+This project represents my learning journey in SQL and my readiness to grow as a data analyst.
